@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*fuente google*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kaushan+Script&display=swap');
+/*titulos*/
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+/* footer*/
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+/* media */
+
+@media (min-width: 320px) and (max-width: 480px){
+    .parrafo{
+        font-family: 'Indie Flower', cursive;
+        font-size: 12px;
+    }
+    /* propuesta */
+    .contentPropuesta{
+        margin: 20px 20px;
+        display: grid;
+        grid-template-columns:repeat(1, 100%);
+        grid-template-rows: auto;
+        gap: 5px;
+        grid-template-areas: 
+        'propuesta1' 
+        'imagenMenu1'
+        'propuesta2' 
+        'imagenMenu2';
+    }
+    /*recetas*/
+    .conteinerPaulova{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: auto;
+        gap: 15px;
+        grid-template-areas: 
+        'p1'
+        'parrafoPaulova' 
+        'photoPaulova'
+        'p2' 
+        'ulrescetas'
+        'p3' 
+        'olrecetas';
+        
+    }
+    
+    /* index*/
+    .carrucelf{
+        height: auto;
+        width: 99%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1480px){
+    .contentPropuesta{
+        margin: 20px 20px;
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 5px;
+        grid-template-areas: 
+        'propuesta1 imagenMenu1'
+        'propuesta2 imagenMenu2';
+    }
+    /*recetas*/
+    .conteinerPaulova{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+        grid-template-areas: 
+        'p1 p1'
+        'parrafoPaulova photoPaulova'
+        'p2 ulrescetas'
+        'p3 olrecetas';
+        
+    }
+    .conteinerPaulova{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+        grid-template-areas: 
+        'p1 p1'
+        'parrafoPaulova photoPaulova'
+        'p2 ulrescetas'
+        'p3 olrecetas';
+        
+    }
+
+    /* index*/
+    .carrucelf{
+        height: 350px;
+        width: auto;
+    }
+
+
+}
+
+/*bodys*/
+
+
+body{
+    background-color: #e4c082;
+}
+
+
+
+
+/*html index */
+
+h1{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 35px;
+    margin: 20px 20px;
+    padding: 15px 15px;
+}
+h2{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    margin: 20px 20px;
+    padding: 15px 15px;
+}
+p{    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    word-spacing: 5px;
+    font-weight: bolder;
+    margin: 20px 20px;
+    padding: 15px 15px;
+}
+
+.parrafo{
+    background-image: url(../asset/logo2.png);
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-re-bei {
+    display: flex;
+    justify-content: center;
+}
+.carrucel{
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* html quienes */
+.main-q{
+    width: 100%;
+    justify-content: center;
+}
+.tquines{
+    text-align: center;
+    padding: 50px 50px;
+    text-decoration: underline;
+    font-family:'Salsa', cursive;
+}
+.nuestro{
+    padding: 20px 20px;
+    text-align: center;
+    font-family: 'salsa', cursive;
+}
+.parrafo-quienes{
+    text-align: center;
+    font-family:'Salsa', cursive;
+    font-size: 14px;
+    width: 90%;
+    padding-left: 20px;
+}
+.video-youtube{
+    text-align: center;
+    width: 100%;
+    padding: 25px;
+}
+/*html recetas*/
+
+
+.parrafoPaulova{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    word-spacing: 5px;
+    font-weight: bolder;
+    margin: 20px 20px;
+    padding: 15px 15px;
+    grid-area: parrafoPaulova;
+}
+
+.p1{
+    grid-area: p1;
+}
+.p2{
+    grid-area: p2;
+}
+.p3{
+    grid-area: p3;
+}
+.photoPaulova{
+    height: 300px;
+    width: auto;
+    grid-area: photoPaulova;
+    display: flex;
+    justify-self: center;
+    box-shadow: 5px 5px 9px 0px;
+
+}
+
+.olrecetas{
+    font-family: 'Salsa', cursive;
+    padding-block: 10px;
+    margin: 20px;
+    padding-left: 50px;
+    grid-area: olrecetas;
+}
+.ulrecetas{
+    font-family: 'Salsa', cursive;
+    padding-block: 10px;
+    margin: 20px;
+    padding-left: 50px;
+    grid-area: ulrescetas;
+}
+
+
+/* html contacatos */
+.gestion{
+    text-align:left;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    margin: 20px 20px;
+    padding: 15px 15px;
+
+}
+
+.tcontacato{
+    font-family:'Salsa', cursive;
+    font: size 25px;
+    text-align:left;
+    margin: 30px 30px;
+}
+
+.conteiner{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px;
+    gap: 15px;
+}
+
+
+.formu{
+    background-color: #4d4337;
+    background-size: auto;
+    padding-left: 5px;
+    border-radius: 8px;
+    box-sizing: content-box;
+    width: 90%;
+    height: 90%;
+    margin: 30px 30px;
+
+}
+input, textarea, label {
+    display: block;
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+input[type="submit"] {
+    cursor: pointer ;
+    border: #4d4337;
+    padding: 5px 5px;
+    background-color: #a0a789;
+    color: #e4c082;
+}
+
+.formulario{
+    display: block;
+    margin: 30px;
+    width: 50%;
+    padding: 15px 15px;
+}
+.imagen{
+    width:auto;
+    height: 550PX;
+    padding: 25PX 25px;
+}
+
+/* html propuesta*/
+
+.parrafo-titu-propuesta{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    word-spacing: 5px;
+    font-weight: bolder;
+    margin: 20px 20px;
+    padding: 15px 15px;
+}
+
+.propuesta{
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+}
+.propuesta1{
+    grid-area: 'propuesta1';
+}
+
+.propuesta2{
+    grid-area: "propuesta2";
+}
+.titulosPropuestas{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    margin: 20px 20px;
+    padding: 15px 15px;
+
+}
+.parrafoPropuesta{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    word-spacing: 5px;
+    font-weight: bolder;
+    margin: 20px 20px;
+    padding: 15px 15px;
+}
+.imagenMenu1{
+    grid-area:'imagenMenu1';
+    display: flex;
+    justify-content: center;
+}
+.fotoM{
+    box-shadow: 1px 1px 1px 2px;
+}
+.imagenMenu2{
+    grid-area:'imagenMenu1';
+    display: flex;
+    justify-content: center;
+}
+/* footer*/
+footer{
+    justify-content:space-around;
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+}
+footer a{
+    width: 100%;
+    padding: 20px 20px;
+    text-justify:distribute-all-lines;}
+h3{
+    font-size:10px;
+    font-family: 'Tenor Sans', sans-serif;;
+     padding: 20px 20px
+}
+
+.logoinsta{
+    width:30px;
+    height: auto;
+    background-color: #e4c082;
+}
+
+.logoface{
+    width: 30px;
+    height: auto;
+}
+
