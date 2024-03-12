@@ -21,99 +21,102 @@
 </head>
 
 <header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg d-flex  " style="background: linear-gradient(45deg, rgba(0, 0, 0, 0.747), transparent), #d9c556db;" >
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <img class="navImg" src="asset/logo-re-bei.png">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" style="color: #000; font-family: 'TuFuente', Kaushan Script;" href="pages/propuesta.html">Propuesta</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link"style="color: #000; font-family: 'TuFuente', Kaushan Script;" href="pages/contactos.html">Contacato</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
+            <a class="nav-link active" aria-current="page"style="color: #000; font-family: 'TuFuente', Kaushan Script;" href="pages/quienes-somos.html">Quienes somos</a>
+
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="pages/propuesta.html">Propuesta</a></li>
+              <li><a class="dropdown-item" href="pages/contactos.html">Contacato</a></li>
+              <li><a class="dropdown-item" href="pages/quienes-somos.html">Quienes somos</a></li>
+              <li><a class="dropdown-item" href="pages/recetas&tips.html">Recetas & tips</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link active" aria-current="page"style="color: #000; font-family: 'TuFuente', Kaushan Script;" href="pages/recetas&tips.html">Recetas & tips</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 </header>
 
+
 <body> 
-    <main class="main">
-        <h1 a class="titulo"> Revolucion kitchen pop up</h1>
-            <div class="logo-re-bei">
-               <img class="fotologoP" src="asset/logo1.png" width="300" height="300" alt="logo de la empesa dos sartenes y un fuegito">
+  <main>
+    <h1 class="titulo">Revolucion kitchen pop up</h1>
+    <div class="logo-re-bei">
+      <img class="fotologoP" src="asset/logo-re-bei.png" width="300" height="300" alt="logo de la empresa dos sartenes y un fuegito">
+    </div>
+        <h2>Propuesta</h2>
+        <p class="parrafo-titu-propuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam suscipit perferendis impedit nulla deleniti quibusdam eveniet fugiat. Vero repellendus nobis perspiciatis quasi maxime amet, rem laboriosam assumenda illum dignissimos minus!</p>
+    <section class="contentPropuesta">
+      <div class="prouesta2">
+        <h2 class="titulosPropuestas">Primera propuesta</h2>
+        <p class="parrafoPropuesta">Aca entregamos un menú donde podrás elegir el tipo de plato que deseen, ya sea vegetariano, pescado o carnes rojas, postre dulce o cítrico y combinarlo de las formas que usted desee.</p><button id="verEventos">quieres ver mas</button>
+        <div id="contenedorEventos"></div>
+      </div>
+      <div class="propuesta1">
+        <h2 class="titulosPropuestas">Algunos de nuestros menús</h2>
+        <p id="parrafoPropuesta1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate minus provident quasi ipsam, deleniti, saepe voluptates laboriosam expedita nisi in dolorem vitae consectetur ipsum nostrum facilis, ad autem non modi.</p><button id="verPlatos">quieres ver mas</button>
+        <div id="contenedorPlatos"></div>
+      </div>
+      <!-- <article class="imagenMenu1">
+        <img class="fotoM" src="asset/menu1.jpg" alt="menú de muestra" width="auto" height="300px">
+      </article>
+      <article class="imagenMenu2">
+        <img class="fotoMM" src="asset/menu2.jpg" alt="menú de muestra" width="auto" height="300px">
+      </article> -->
+    </section>
+    <h2>contacto</h2>
+    <h2 class="gestion">Gestion de recerbas</h2>
+      <section class="conteiner">
+        <p>Para recervar un evento con nosotros complete el formulario para que nos pongamos en contacato con usted. Podremos alcrara todas sus dudas y recervar una fecha para cual quier evento que requiera</p>
+          
+            <article class="formu">
+               <div a class="formulario">
+               <form action="enviar" method="post">
+               <label form="nombre">nombre</label>
+               <input type="nombre" id="nombre" name="nombre" required>
+               <label form="email">correo electronico</label>
+                <input type="email" id="email" name="email" required>
+               <label for="mensaje">mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <input type="button" id="enviarBtn" value="enviar">
+              </form>
             </div>
-<!--revolucion chef adomicilio -->
-        <section class="cotenedor">
-            <h2>Chef adomicilio</h2>
-                <p a class="parrafo">
-                El concepto de "chef a domicilio" se refiere a un servicio en el que un chef profesional va a la casa del cliente para preparar comidas. Este concepto ha ganado popularidad en varios lugares del mundo y ofrece una experiencia culinaria personalizada y única en la comodidad del hogar del cliente.<br>
-                Aquí están algunas características y servicios que suelen ofrecer los chefs a domicilio:
-                Menús Personalizados: Los chefs a domicilio suelen ofrecer menús personalizados basados en las preferencias y necesidades dietéticas del cliente. Esto puede incluir platos para personas con restricciones alimenticias, como alergias, vegetarianismo, veganismo, o dietas específicas como keto, paleo, etc.<br>
-                Compra de Ingredientes: El chef se encarga de comprar todos los ingredientes necesarios para la preparación de la comida. Esto asegura la frescura y calidad de los productos utilizados.<br>
-                Preparación de Alimentos en el Hogar: El chef prepara la comida en la cocina del cliente. Esto permite a los clientes ver el proceso de cocinado, aprender técnicas y hacer preguntas al chef.<br>
-                Experiencia Gastronómica Exclusiva: Al contratar un chef a domicilio, los clientes disfrutan de una experiencia similar a la de un restaurante de alta calidad pero en un entorno más íntimo y personalizado.<br>
-                Servicio de Catering para Eventos: Algunos chefs a domicilio también ofrecen servicios de catering para eventos pequeños o grandes en el hogar del cliente, como cenas, fiestas, reuniones familiares, etc.<br>
-                Limpieza Post-Cocina: Generalmente, el servicio incluye la limpieza de la cocina una vez que la comida ha sido preparada y servida, lo que proporciona una experiencia sin complicaciones para el cliente.<br>
-                Clases de Cocina: Algunos chefs a domicilio también ofrecen clases de cocina personalizadas, donde enseñan a preparar ciertos platos o técnicas culinarias.<br>
-                Experiencias Temáticas: Para ocasiones especiales, algunos chefs pueden ofrecer cenas temáticas, como cocina de una región específica del mundo, cenas históricas, entre otras.<br>
-                Este tipo de servicio es ideal para aquellos que buscan disfrutar de una experiencia culinaria única, celebrar una ocasión especial, o simplemente disfrutar de una comida gourmet sin salir de casa.
-                </p>
-        </section>
-        <section class="carrucel">
-          <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true" >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="carrucelf" src="../coder/asset/Photos/carrucel1.jpg" class="d-block img-fluid" class="d-block w-100" alt="entrada de camarones ">
-            </div>
-            <div class="carousel-item">
-              <img class="carrucelf" src="../coder/asset/Photos/carrucel2.jpg" class="d-block img-fluid" class="d-block w-100" alt="plto principal salmon">
-            </div>
-            <div class="carousel-item">
-              <img class="carrucelf" src="../coder/asset/Photos/carrucel3.jpg" class="d-block img-fluid" class="d-block w-100" alt="plato pricipal salmon">
-            </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </section>
-    </main>
+          </article>
+      </section>
+  
+</main>
 </body>
 <footer>
     <h3>powerd by lucas iscenkoff</h3>
     <h3>Playa del Carmen - Quintana roo - Mexico</h3>
     <div>
-        <a href="https://www.instagram.com/revolucion_kitchen/?utm_source=ig_web_button_share_sheet"target="_blank" revolucion><img class="logoinsta" src="../coder/asset/Instagram.jpg" alt='logo'></a>
-        <a href="https://www.facebook.com/profile.php?id=100095475494660"target="_blank"revolucion><img class="logoface" src="../coder/asset/facebook.png" alt="logaface"></a>
+        <a href="https://www.instagram.com/revolucion_kitchen/?utm_source=ig_web_button_share_sheet"target="_blank" revolucion><img class="logoinsta" src="asset/Instagram.png" alt='logo'></a>
+        <a href="https://www.facebook.com/profile.php?id=100095475494660"target="_blank"revolucion><img class="logoface" src="asset/facebook.png" alt="logaface"></a>
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <script src="../js/js/main.js"></script>
+
+
     
 </body>
 </html>
